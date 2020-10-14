@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "50674106555",
+    "firebase_url": "https://ridesharing-82ab2.firebaseio.com",
+    "project_id": "ridesharing-82ab2",
+    "storage_bucket": "ridesharing-82ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50674106555:android:3872027a93e7a03bf1e99e",
+        "android_client_info": {
+          "package_name": "com.jamestrada.riderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50674106555-bp604hqeaeu5k35jijlebbagks3nbh5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWUaQkSG5cxYwyseZKD8c39osHyxBR7z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50674106555-bp604hqeaeu5k35jijlebbagks3nbh5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
