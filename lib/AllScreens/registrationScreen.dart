@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rider_app/AllScreens/loginScreen.dart';
 
 class RegistrationScreen extends StatelessWidget {
+  static const String idScreen = "register";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +96,7 @@ class RegistrationScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 14.0),
                     ),
 
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 20.0,),
                     RaisedButton(
                       color: Colors.yellow,
                       textColor: Colors.white,
@@ -120,7 +122,7 @@ class RegistrationScreen extends StatelessWidget {
               ),
               FlatButton(
                 onPressed: (){
-                  print("clicked");
+                  Navigator.pushNamedAndRemoveUntil(context, LoginScreen.idScreen, (route) => false);
                 },
                 child: Text(
                   "Already have an account? Login Here",
