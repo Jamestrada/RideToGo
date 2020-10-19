@@ -3,6 +3,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:rider_app/AllScreens/mainScreen.dart';
 import 'package:rider_app/AllScreens/registrationScreen.dart';
+import 'package:rider_app/AllWidgets/progressDialog.dart';
 import 'package:rider_app/main.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -122,21 +123,32 @@ class LoginScreen extends StatelessWidget {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   void loginUser(BuildContext context) async {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return ProgressDialog(message: "Authenticating, Please wait...");
+      }
+    );
+
     final User firebaseUser = (await _firebaseAuth.signInWithEmailAndPassword(email: emailTextEditingController.text, password: passwordTextEditingController.text).catchError((errMsg) {
+      Navigator.pop(context);
       displayToastMessage("Error: " + errMsg.toString(), context);
     })).user;
-    if (firebaseUser != null) { // user exists
 
+    if (firebaseUser != null) { // user exists
       usersRef.child(firebaseUser.uid).once().then((DataSnapshot snap) {
         if (snap.value != null) {
           Navigator.pushNamedAndRemoveUntil(context, MainScreen.idScreen, (route) => false);
           displayToastMessage("Logged in successfully", context);
         } else {
+          Navigator.pop(context);
           _firebaseAuth.signOut();
           displayToastMessage("No record exists for this user.", context);
         }
       });
     } else {
+      Navigator.pop(context);
       // error occurred - display error msg
       displayToastMessage("Error occurred signing in", context);
     }

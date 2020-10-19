@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/AllWidgets/progressDialog.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/AllScreens/loginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/loginScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/AllScreens/registrationScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/registrationScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +60,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1602944113140">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1603063363517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602944113140" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1602944113139">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1603063363517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602944113139" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1602944113139">
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1603063363517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602944113139" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1602944113140">
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1603063363517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602944113140" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
     <state x="548" y="301" key="IDE.errors.dialog" timestamp="1602605038926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
