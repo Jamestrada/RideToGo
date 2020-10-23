@@ -3,18 +3,32 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/AllWidgets/progressDialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/configMaps.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/AllScreens/loginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/loginScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/AllScreens/registrationScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/registrationScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/.last_build_id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rider_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rider_app.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_28]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -31,14 +45,15 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="emulator" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -60,30 +75,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1603063363517">
+    <state x="648" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603379450995">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1603063363517">
+    <state x="648" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379450995" />
+    <state x="100" y="123" width="1720" height="857" key="AVDManager" timestamp="1603380684578">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1603063363517">
+    <state x="100" y="123" width="1720" height="857" key="AVDManager/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603380684578" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1603379604785">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1603063363517">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379604785" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1603379604784">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603063363517" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379604784" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1603379604784">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379604784" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1603379604784">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379604784" />
     <state x="548" y="301" key="IDE.errors.dialog" timestamp="1602605038926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="548" y="301" key="IDE.errors.dialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602605038926" />
-    <state x="100" y="123" width="1720" height="857" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1602535104523">
+    <state x="76" y="172" key="SettingsEditor" timestamp="1603380372348">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="100" y="123" width="1720" height="857" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602535104523" />
+    <state x="76" y="172" key="SettingsEditor/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603380372348" />
+    <state x="100" y="123" width="1720" height="857" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1603234014713">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="100" y="123" width="1720" height="857" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603234014713" />
     <state x="630" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1602601615229">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
