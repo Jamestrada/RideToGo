@@ -8,23 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/DataHandler/appData.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Models/address.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/AllScreens/searchScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_28]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -46,7 +39,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="emulator" />
@@ -80,26 +72,26 @@
     </state>
     <state x="100" y="123" width="1720" height="857" key="AVDManager/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604074915126" />
     <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367707" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1607834367626">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1607834457682">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367626" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1607834367626">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834457682" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1607834457681">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367626" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1607834367625">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834457681" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1607834457681">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055471" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367625" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1607834367626">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834457681" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1607834457681">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367626" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834457681" />
     <state x="548" y="301" key="IDE.errors.dialog" timestamp="1602605038926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

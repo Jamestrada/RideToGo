@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+
+class SearchScreen extends StatefulWidget {
+  @override
+  _State createState() => _State();
+}
+
+class _State extends State<> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
