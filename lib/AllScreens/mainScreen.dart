@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:rider_app/AllScreens/searchScreen.dart';
 import 'package:rider_app/AllWidgets/divider.dart';
 import 'package:rider_app/Assistants/assistantMethods.dart';
 import 'package:rider_app/DataHandler/appData.dart';
@@ -176,7 +177,7 @@ class _MainScreenState extends State<MainScreen> {
                     SizedBox(height: 20.0),
                     GestureDetector(
                       onTap: () {
-
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => SearchScreen()));
                       },
                       child: Container(
                         decoration: BoxDecoration(

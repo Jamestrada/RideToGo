@@ -2,12 +2,20 @@ import 'package:flutter/material.dart';
 
 class SearchScreen extends StatefulWidget {
   @override
-  _State createState() => _State();
+  _SearchScreenState createState() => _SearchScreenState();
 }
 
-class _State extends State<> {
+class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 215.0,
+          )
+        ],
+      ),
+    );
   }
 }
