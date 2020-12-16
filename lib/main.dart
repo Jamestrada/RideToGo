@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'RideToGo',
         theme: ThemeData(
-          fontFamily: "Brand Bold",
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),

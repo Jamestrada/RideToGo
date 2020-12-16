@@ -8,14 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/AllScreens/searchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/searchScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_28]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -66,11 +69,11 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="648" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379450995" />
-    <state x="100" y="125" width="1720" height="856" key="AVDManager" timestamp="1607834367707">
+    <state x="100" y="125" width="1720" height="856" key="AVDManager" timestamp="1608094143513">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="AVDManager/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604074915126" />
-    <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1607834367707" />
+    <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608094143513" />
     <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1607926052023">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
@@ -108,5 +111,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="630" y="384" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602601615229" />
+    <state x="625" y="255" key="run.anything.popup" timestamp="1608093798324">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="625" y="255" key="run.anything.popup/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608093798324" />
   </component>
 </project>
