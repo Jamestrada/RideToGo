@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:rider_app/Assistants/requestAssistant.dart';
 import 'package:rider_app/DataHandler/appData.dart';
+import 'package:rider_app/configMaps.dart';
 
 class SearchScreen extends StatefulWidget {
   @override
@@ -93,6 +95,9 @@ class _SearchScreenState extends State<SearchScreen> {
                           child: Padding(
                             padding: EdgeInsets.all(3.0),
                             child: TextField(
+                              onChanged: (val) {
+                                findPlace(val);
+                              },
                               controller: dropOffTextEditingController,
                               decoration: InputDecoration(
                                 hintText: "Where to?",
@@ -115,5 +120,19 @@ class _SearchScreenState extends State<SearchScreen> {
         ],
       ),
     );
+  }
+
+  void findPlace(String placeName) async {
+    if (placeName.length > 1) {
+      String autocomplete = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$placeName}&key=$mapKey&sessiontoken=1234567890&components=country:gt";
+
+      var res = await RequestAssistant.getRequest(autocomplete);
+      if (res == "failed") {
+        return;
+      }
+
+      print("Places predictions response :: ");
+      print(res);
+    }
   }
 }
