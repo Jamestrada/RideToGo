@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -8,11 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Models/placePredictions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/AllScreens/searchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/searchScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Models/address.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Models/address.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,35 +73,39 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608185866349">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="424" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608185866349" />
     <state x="648" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603379450995">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="648" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1603379450995" />
-    <state x="100" y="125" width="1720" height="856" key="AVDManager" timestamp="1608182730533">
+    <state x="100" y="125" width="1720" height="856" key="AVDManager" timestamp="1608265164152">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="100" y="123" width="1720" height="857" key="AVDManager/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604074915126" />
-    <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608182730533" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1608183296372">
+    <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608265164152" />
+    <state width="939" height="287" key="GridCell.Tab.0.bottom" timestamp="1608265437046">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608183296372" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1608183296372">
+    <state width="939" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608265437046" />
+    <state width="939" height="287" key="GridCell.Tab.0.center" timestamp="1608265437046">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608183296372" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1608183296371">
+    <state width="939" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608265437046" />
+    <state width="939" height="287" key="GridCell.Tab.0.left" timestamp="1608265437045">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055471" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608183296371" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1608183296372">
+    <state width="939" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608265437045" />
+    <state width="939" height="287" key="GridCell.Tab.0.right" timestamp="1608265437046">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608183296372" />
+    <state width="939" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608265437046" />
     <state x="548" y="301" key="IDE.errors.dialog" timestamp="1602605038926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -112,9 +123,13 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="630" y="384" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1602601615229" />
-    <state x="625" y="255" key="run.anything.popup" timestamp="1608093798324">
+    <state x="652" y="185" width="615" height="735" key="find.popup" timestamp="1608185359461">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="625" y="255" key="run.anything.popup/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608093798324" />
+    <state x="652" y="185" width="615" height="735" key="find.popup/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608185359461" />
+    <state x="625" y="255" key="run.anything.popup" timestamp="1608185954856">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="625" y="255" key="run.anything.popup/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1608185954856" />
   </component>
 </project>
