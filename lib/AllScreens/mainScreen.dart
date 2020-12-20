@@ -6,6 +6,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:rider_app/AllScreens/searchScreen.dart';
 import 'package:rider_app/AllWidgets/divider.dart';
+import 'package:rider_app/AllWidgets/progressDialog.dart';
 import 'package:rider_app/Assistants/assistantMethods.dart';
 import 'package:rider_app/DataHandler/appData.dart';
 
@@ -176,8 +177,11 @@ class _MainScreenState extends State<MainScreen> {
                     Text("Where to? ", style: TextStyle(fontSize: 20.0, fontFamily: "Brand-Bold")),
                     SizedBox(height: 20.0),
                     GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => SearchScreen()));
+                      onTap: () async {
+                        var res = await Navigator.push(context, MaterialPageRoute(builder: (context) => SearchScreen()));
+                        if (res == "obtainDirection") {
+                          await getPlaceDirection();
+                        }
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -253,5 +257,25 @@ class _MainScreenState extends State<MainScreen> {
         ],
       )
     );
+  }
+
+  Future<void> getPlaceDirection() async {
+    var initialPos = Provider.of<AppData>(context, listen: false).pickUpLocation;
+    var finalPos = Provider.of<AppData>(context, listen: false).dropOffLocation;
+
+    var pickUpLatLng = LatLng(initialPos.latitude, initialPos.longitude);
+    var dropOffLatLng = LatLng(finalPos.latitude, finalPos.longitude);
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) => ProgressDialog(message: "Please wait...",)
+    );
+
+    var details = await AssistantMethods.obtainDirectionDetails(pickUpLatLng, dropOffLatLng);
+
+    Navigator.pop(context);
+
+    print("This is Encoded Points ::");
+    print(details.encodedPoints);
   }
 }
