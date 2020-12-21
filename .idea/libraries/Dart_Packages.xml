@@ -121,6 +121,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_polyline_points">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_polyline_points-0.2.4/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_test">
           <value>
             <list>
@@ -343,6 +350,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_database-4.4.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_polyline_points-0.2.4/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.6/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/geolocator-6.1.13/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/geolocator_platform_interface-1.0.8/lib" />

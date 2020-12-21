@@ -147,7 +147,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   void findPlace(String placeName) async {
     if (placeName.length > 1) {
-      String autocomplete = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$placeName}&key=$mapKey&sessiontoken=1234567890&components=country:gt";
+      String autocomplete = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$placeName}&key=$mapKey&sessiontoken=1234567890&components=country:us";
 
       var res = await RequestAssistant.getRequest(autocomplete);
       if (res == "failed") {
