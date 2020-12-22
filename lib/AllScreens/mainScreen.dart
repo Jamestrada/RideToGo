@@ -30,6 +30,9 @@ class _MainScreenState extends State<MainScreen> {
   var geoLocator = Geolocator();
   double bottomPaddingOfMap = 0;
 
+  Set<Marker> markersSet = {};
+  Set<Circle> circlesSet = {};
+
   void locatePosition() async {
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
     currentPosition = position;
@@ -111,6 +114,8 @@ class _MainScreenState extends State<MainScreen> {
             zoomGesturesEnabled: true,
             zoomControlsEnabled: true,
             polylines: polylineSet,
+            markers: markersSet,
+            circles: circlesSet,
             onMapCreated: (GoogleMapController controller){
               _controllerGoogleMap.complete(controller);
               newGoogleMapController = controller;
@@ -323,5 +328,47 @@ class _MainScreenState extends State<MainScreen> {
     }
 
     newGoogleMapController.animateCamera(CameraUpdate.newLatLngBounds(latLngBounds, 70));
+
+    Marker pickUpLocationMarker = Marker(
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+      infoWindow: InfoWindow(title: initialPos.placeName, snippet: "My location"),
+      position: pickUpLatLng,
+      markerId: MarkerId("pickUpId"),
+    );
+
+    Marker dropOffLocationMarker = Marker(
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
+      infoWindow: InfoWindow(title: finalPos.placeName, snippet: "Drop off location"),
+      position: dropOffLatLng,
+      markerId: MarkerId("dropOffId"),
+    );
+
+    setState(() {
+      markersSet.add(pickUpLocationMarker);
+      markersSet.add(dropOffLocationMarker);
+    });
+
+    Circle pickUpLocationCircle = Circle(
+      fillColor: Colors.blue,
+      center: pickUpLatLng,
+      radius: 12,
+      strokeWidth: 4,
+      strokeColor: Colors.blueAccent,
+      circleId: CircleId("pickUpId"),
+    );
+
+    Circle dropOffLocationCircle = Circle(
+      fillColor: Colors.purple,
+      center: dropOffLatLng,
+      radius: 12,
+      strokeWidth: 4,
+      strokeColor: Colors.deepPurple,
+      circleId: CircleId("dropOffId"),
+    );
+
+    setState(() {
+      circlesSet.add(pickUpLocationCircle);
+      circlesSet.add(dropOffLocationCircle);
+    });
   }
 }
