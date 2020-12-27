@@ -51,4 +51,18 @@ class AssistantMethods {
 
     return directionDetails;
   }
+
+  static int calculateFares(DirectionDetails directionDetails) {
+    // in USD
+    double timeTraveledFare = (directionDetails.durationValue / 60) * 0.20; // 0.20 per minute
+    double distanceTraveledFare = (directionDetails.distanceValue / 1000) * 0.20; // 0.20 per kilometer
+    double totalFareAmount = timeTraveledFare + distanceTraveledFare;
+
+    // Local Currency
+    // $1 = Q8 (GTQ)
+    // double totalLocalAmount = totalFareAmount * 8;
+
+    return totalFareAmount.truncate();
+  }
+
 }

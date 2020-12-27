@@ -11,6 +11,7 @@ import 'package:rider_app/AllWidgets/divider.dart';
 import 'package:rider_app/AllWidgets/progressDialog.dart';
 import 'package:rider_app/Assistants/assistantMethods.dart';
 import 'package:rider_app/DataHandler/appData.dart';
+import 'package:rider_app/Models/directionDetails.dart';
 
 class MainScreen extends StatefulWidget {
   static const String idScreen = "mainScreen";
@@ -24,6 +25,8 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   GoogleMapController newGoogleMapController; // marker for the driver
 
   GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
+  DirectionDetails tripDirectionDetails;
+
   List<LatLng> pLineCoordinates = [];
   Set<Polyline> polylineSet = {};
 
@@ -37,6 +40,22 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   double rideDetailsContainerHeight = 0;
   double searchContainerHeight = 300.0;
 
+  bool drawerOpen = true;
+
+  resetApp() {
+    setState(() {
+      drawerOpen = true;
+      searchContainerHeight = 300;
+      rideDetailsContainerHeight = 0;
+      bottomPaddingOfMap = 230.0;
+
+      polylineSet.clear();
+      markersSet.clear();
+      circlesSet.clear();
+      pLineCoordinates.clear();
+    });
+  }
+
   // Once we get a route, we hide the search container and display the ride details container
   void displayRideDetailsContainer() async {
     await getPlaceDirection();
@@ -45,7 +64,9 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
       searchContainerHeight = 0;
       rideDetailsContainerHeight = 240.0;
       bottomPaddingOfMap = 230.0;
+      drawerOpen = false;
     });
+    locatePosition();
   }
 
   void locatePosition() async {
@@ -141,13 +162,18 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
               locatePosition();
             },
           ),
+
           // Hamburger Button for Drawer
           Positioned(
-            top: 45.0,
+            top: 38.0,
             left: 22.0,
             child: GestureDetector( // when user taps
               onTap: (){
-                scaffoldKey.currentState.openDrawer();
+                if (drawerOpen) {
+                  scaffoldKey.currentState.openDrawer();
+                } else {
+                  resetApp();
+                }
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -167,7 +193,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                 ),
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
-                  child: Icon(Icons.menu, color: Colors.black,),
+                  child: Icon((drawerOpen) ? Icons.menu : Icons.close, color: Colors.black,),
                   radius: 20.0,
                 ),
               ),
@@ -326,10 +352,14 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                                     "Car", style: TextStyle(fontSize: 18.0, fontFamily: "Brand-Bold"),
                                   ),
                                   Text(
-                                    "10km", style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                                    ((tripDirectionDetails != null) ? tripDirectionDetails.distanceText : ''), style: TextStyle(fontSize: 16.0, color: Colors.grey),
                                   )
                                 ],
-                              )
+                              ),
+                              Expanded(child: Container()),
+                              Text(
+                                ((tripDirectionDetails != null) ? '\$${AssistantMethods.calculateFares(tripDirectionDetails)}' : ''), style: TextStyle(fontFamily: "Brand-Bold"),
+                              ),
                             ],
                           ),
                         ),
@@ -391,6 +421,9 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
     );
 
     var details = await AssistantMethods.obtainDirectionDetails(pickUpLatLng, dropOffLatLng);
+    setState(() {
+      tripDirectionDetails = details;
+    });
 
     Navigator.pop(context);
 
