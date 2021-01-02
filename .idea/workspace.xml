@@ -9,10 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,26 +78,26 @@
     </state>
     <state x="100" y="123" width="1720" height="857" key="AVDManager/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604074915126" />
     <state x="100" y="125" width="1720" height="856" key="AVDManager/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609048367528" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1609048137809">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1609565835785">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609048137809" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1609048137808">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609565835785" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1609565835785">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609048137808" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1609048137808">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609565835785" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1609565835784">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055471" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609048137808" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1609048137809">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609565835784" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1609565835785">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.23.1792.1097@0.23.1920.1057" timestamp="1604121055472" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609048137809" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1920.1055/-1792.25.1792.1095@0.25.1920.1055" timestamp="1609565835785" />
     <state x="548" y="302" key="IDE.errors.dialog" timestamp="1608401430582">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>

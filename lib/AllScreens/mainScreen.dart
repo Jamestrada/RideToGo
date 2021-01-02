@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -403,6 +404,52 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
               ),
             ),
           ),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(16.0), topRight: Radius.circular(16.0)),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  spreadRadius: 0.5,
+                  blurRadius: 16.0,
+                  color: Colors.black54,
+                  offset: Offset(0.7, 0.7),
+                )
+              ]
+            ),
+            height: 250.0,
+            child: Column(
+              children: [
+                SizedBox(height: 12.0,),
+                SizedBox(
+                  width: double.infinity,
+                  child: ColorizeAnimatedTextKit(
+                    onTap: () {
+                      print("Tap Event");
+                    },
+                    text: [
+                      "Requesting a Ride...",
+                      "Please wait...",
+                      "Finding a Driver...",
+                    ],
+                    textStyle: TextStyle(
+                      fontSize: 55.0,
+                      fontFamily: "Signatra"
+                    ),
+                    colors: [
+                      Colors.green,
+                      Colors.purple,
+                      Colors.pink,
+                      Colors.blue,
+                      Colors.yellow,
+                      Colors.red,
+                    ],
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       )
     );
