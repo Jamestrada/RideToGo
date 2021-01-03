@@ -9,8 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d518d449-a4d7-4761-a68d-56a255cea222" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Models/allUsers.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/AllScreens/mainScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Assistants/assistantMethods.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/configMaps.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configMaps.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
