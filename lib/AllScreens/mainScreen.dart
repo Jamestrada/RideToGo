@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
@@ -8,6 +9,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:rider_app/AllScreens/loginScreen.dart';
 import 'package:rider_app/AllScreens/searchScreen.dart';
 import 'package:rider_app/AllWidgets/divider.dart';
 import 'package:rider_app/AllWidgets/progressDialog.dart';
@@ -57,7 +59,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   }
 
   void saveRideRequest() {
-    rideRequestRef = FirebaseDatabase.instance.reference().child("Ride Request");
+    rideRequestRef = FirebaseDatabase.instance.reference().child("Ride Request").push();
 
     var pickUp = Provider.of<AppData>(context, listen: false).pickUpLocation;
     var dropOff = Provider.of<AppData>(context, listen: false).dropOffLocation;
@@ -84,7 +86,12 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
       "dropoff_address": dropOff.placeName
     };
 
-    rideRequestRef.push().set(rideInfoMap);
+    rideRequestRef.set(rideInfoMap);
+  }
+
+  void cancelRideRequest() {
+    rideRequestRef.remove();
+
   }
 
   void displayRequestRideContainer() {
@@ -103,6 +110,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
       drawerOpen = true;
       searchContainerHeight = 300;
       rideDetailsContainerHeight = 0;
+      requestRideContainerHeight = 0;
       bottomPaddingOfMap = 230.0;
 
       polylineSet.clear();
@@ -190,6 +198,16 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
               ListTile(
                 leading: Icon(Icons.info),
                 title: Text("About", style: TextStyle(fontSize: 15.0),),
+              ),
+              GestureDetector(
+                onTap: () {
+                  FirebaseAuth.instance.signOut();
+                  Navigator.pushNamedAndRemoveUntil(context, LoginScreen.idScreen, (route) => false);
+                },
+                child: ListTile(
+                  leading: Icon(Icons.info),
+                  title: Text("Sign Out", style: TextStyle(fontSize: 15.0),),
+                ),
               ),
             ],
           ),
@@ -509,15 +527,21 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                       ),
                     ),
                     SizedBox(height: 22.0,),
-                    Container(
-                      height: 60.0,
-                      width: 60.0,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(26.0),
-                        border: Border.all(width: 2.0, color: Colors.grey[300]),
+                    GestureDetector(
+                      onTap: () {
+                        cancelRideRequest();
+                        resetApp();
+                      },
+                      child: Container(
+                        height: 60.0,
+                        width: 60.0,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(26.0),
+                          border: Border.all(width: 2.0, color: Colors.grey[300]),
+                        ),
+                        child: Icon(Icons.close, size: 26.0,),
                       ),
-                      child: Icon(Icons.close, size: 26.0,),
                     ),
                     SizedBox(height: 10.0,),
                     Container(
